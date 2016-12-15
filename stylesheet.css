@@ -79,7 +79,7 @@ h1:hover {
   background: linear-gradient(#fff, transparent 55%),
 
   linear-gradient(0deg, #fff, transparent 20%),
-  #ffa949 url('../img/image2.jpg') no-repeat center;
+  #ffa949 url('../image2.jpg') no-repeat center;
   background-size: cover;
 
   
@@ -225,8 +225,6 @@ li a {
 .cen-list {
   text-align: left;
 }
-
-
 li a:hover:not(.active) {
     background-color: rgba(255,255,255, .8);
 }
