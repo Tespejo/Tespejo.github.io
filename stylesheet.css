@@ -355,7 +355,7 @@ ul.topnav li.icon {display: none;
 
 /* Media Queries ----------------------- */
 
-@media ( max-width: 1024px ) {
+@media screen and ( max-width: 1024px ) {
   .primary-content,
   .secondary-content {
     width: 90%;
@@ -366,7 +366,7 @@ ul.topnav li.icon {display: none;
     margin: 50px 0 20px;
   }
 }
-@media ( max-width: 768px ) {
+@media screen and ( max-width: 768px ) {
 .primary-content,
   .secondary-content {
     width: 100%;
