@@ -1,0 +1,462 @@
+/* Base Styles -------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #878787;
+  margin: 0;
+  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {  
+  font-size: 6.625rem; /* 90px/16px  */
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.3;
+ text-shadow: 2px 2px 4px #000000;
+ font-family: myFFfontb;
+ transition: 3s ease;
+
+}
+
+h2 {
+  font-size: 3.3125em; /* 53px/16px  */
+  font-weight: normal;
+  line-height: 1.1;
+  margin: 0 0 .5em; /* 0 0 26px */
+}
+
+h3 {
+  font-size: 1.25em; /* 20px/16px  */
+  color: #48525c;
+  line-height: 1.2;
+  margin-bottom: 1.7em; /* 34px */
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+p {
+  transition: 3s ease;
+}
+
+/* Pseudo-classes ------------------ */
+
+a:link {
+  color: orange;
+  /*color: rgba(255,255,255, .8);*/
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightgrey;
+}
+p:hover {
+  color: rgba(211,211,211, 0.8);
+}
+a:visited {
+  color: orange;
+}
+
+li  a:active {
+  color: coral;
+}
+h1:hover {
+  color: rgba(212,175,55, .8);
+}
+
+/* Main Styles --------------------- */
+
+.main-header {
+  padding-top: 145px;
+  height: 580px;
+  
+/* header gradident effect*/
+  background: linear-gradient(#fff, transparent 55%),
+
+  linear-gradient(0deg, #fff, transparent 20%),
+  #ffa949 url('../img/image2.jpg') no-repeat center;
+  background-size: cover;
+
+  
+}
+
+.title {
+  color: white;
+  font-size: 1.925rem; /* 26px/16px */
+  display: inline-block;
+  margin-bottom: 50px;
+  line-height: 1.3;
+ text-shadow: 2px 2px 4px #000000;
+ letter-spacing: .11em;
+ font-weight: 200;
+}
+
+.intro {
+  font-size: 1.25em; /* 20px/16px */
+  line-height: 1.6;  
+}
+
+.primary-content,
+.main-header,
+.main-footer {
+  text-align: center;
+}
+
+.primary-content {
+	padding-top: 25px;
+  padding-bottom: 95px;
+}
+
+.secondary-content {
+	padding-top: 80px;
+	padding-bottom: 100px;
+  border-bottom: 2px solid #dfe2e6;
+  }
+
+.callout {
+  font-size: 1.25em;
+  border-bottom: 3px solid;
+  padding: 0 9px 3px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 50px solid #ffa949;
+}
+
+.t-border {
+  border-top: 2px solid #dfe2e6;
+}
+
+/* Layout Styles ------------------ */
+
+.primary-content, 
+.secondary-content {
+  width: 75%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 960px;
+}
+
+.wildlife {
+  color: white;
+  text-align: left;
+  padding: 18% 24%;
+  border-top: 10px solid #ffa949;
+  margin: 30px 0 30px;
+  background: url('../img/image3.png') no-repeat center;
+  background-size: cover;
+  box-shadow: 0px 10px 3.5px -3.5px #888888;
+}
+.wildlife2 {
+  color: white;
+  text-align: left;
+  padding: 18% 24%;
+  border-top: 10px solid #ffa949;
+  margin: 105px 0 60px;
+  background: url('../img/final-header.jpg') no-repeat center;
+  background-size: cover;
+  box-shadow: 0px 10px 3.5px -3.5px #888888;
+}
+/* Grey effect that appears over images when you hover over them--------*/
+.wildlife:hover {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(70%); /* Chrome 19+ & Safari 6+ */
+}
+.wildlife2:hover {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(70%); /* Chrome 19+ & Safari 6+ */
+}
+.arrow {
+  width: 50px;
+}
+
+/* Font face for heading theme---------*/
+@font-face {
+    font-family: myFFfont;
+    src: url(finalf.tff);
+}
+span {
+    font-family: myFFfontb;
+    src: url(finalf.tff);
+}
+
+/* nav bar -------------------------*/
+body {margin:0;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 12px 16px;
+}
+/*Audio Player CSS*/
+/*li audio {
+  margin-top: 5px;
+  display: inline-block;
+  padding-left: 50px;
+}*/
+
+.cen-list {
+  text-align: left;
+}
+
+
+li a:hover:not(.active) {
+    background-color: rgba(255,255,255, .8);
+}
+.active {
+    background-color: rgba(255,255,255, .8);
+}
+a.navBar {
+  color: orange;
+  font-size: 13px;
+  font-family: Verdana;
+  border-bottom-width: 1px;
+  
+}
+a.navBar:hover {
+  border-bottom: solid orange;
+  color: white;
+}
+.org:hover {
+  color:#ef9126;
+}
+.navbar {
+  color: rgba(255,255,255, .8);
+}
+
+/* Float columns ------------------ */
+
+.info,
+.tips {
+width: 46.5%;
+
+}
+
+.tips {
+  float:right;
+}
+.resorts {
+  float:left;
+}
+div.cols {
+  display: inline-block;
+  text-align: center;
+}
+
+img.circle {
+  border-style: solid;
+  border-color: white;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px #888888;
+
+/*image spin*/
+  position: relative;
+    position: relative;
+    opacity: 0.5;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+img.circle:hover {
+ transform: scale(1.5, 1.5);
+    opacity: 1;
+}
+
+img.fimg {
+  margin: 0px;
+  display: inline;
+}
+
+
+/* Float Clearfix ------------------ */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Hamburger Menu ------------------ */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: white;
+   
+
+} 
+ul.topnav li {float: left;
+}
+ul.topnav li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 10px 16px;
+    font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    transition: 0.3s;
+    
+}
+ul.topnav li a:hover {background-color: #555;
+  border-bottom: solid orange;
+  color: white;
+}
+ul.topnav li.icon {display: none;
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Media Queries ----------------------- */
+
+@media ( max-width: 1024px ) {
+  .primary-content,
+  .secondary-content {
+    width: 90%;
+  }
+  .wildlife,
+  .wildlife2 {
+    padding: 10% 12%;
+    margin: 50px 0 20px;
+  }
+}
+@media ( max-width: 768px ) {
+.primary-content,
+  .secondary-content {
+    width: 100%;
+    padding: 20px;
+    border-top: none;
+  }
+  .main-header {
+    max-height: 380px;
+    padding: 50px 25px 0;
+  }
+
+  .title {
+    font-size:1.3rem;
+    border: none;
+  }
+  h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+  .arrow {
+    width:10%;
+    padding-top: 30px;
+  }
+  .intro {
+    font-size: 1rem;
+  }
+  a.navBar {
+    font-size: 0.5rem;
+  }
+  .info,
+  .tips {
+    float:none;
+    width:100%;
+  }
+  .main-footer {
+    padding: 20px 0px;
+  }
+  ::selection {
+    color: black; 
+    background: rgb(255,105,180);
+}
+span.title {
+  margin-top: 10px;
+}
+  /* image transform break point*/
+  img.circle:hover {
+   transform: scale(1.2, 1.2);
+      opacity: 1;
+  }
+
+  img.fimg {
+    margin: 0px;
+    display: inline;
+  }
+  img.circle {
+    border-radius: 8%;
+  }
+  a.callout {
+    background-color: rgba(252,252,252,2);
+    box-shadow: 0 6.5px 2px -2px grey;
+  }
+  a.callout:hover {
+    background-color: #FF9900;
+    color: white;
+    border-radius: 7%;
+  }
+  div.tips {
+    padding-top: 40px;
+  }
+}
+
+
+#navSel {
+  background: #e5e5e5; 
+  background: linear-gradient(to right, #e5e5e5 , white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
